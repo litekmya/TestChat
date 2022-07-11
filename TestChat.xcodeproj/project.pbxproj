@@ -14,6 +14,13 @@
 		3CB7A5CD287857C3000E80E8 /* TestChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7A5CB287857C3000E80E8 /* TestChat.xcdatamodeld */; };
 		3CB7A5CF287857C6000E80E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB7A5CE287857C6000E80E8 /* Assets.xcassets */; };
 		3CB7A5D2287857C6000E80E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CB7A5D0287857C6000E80E8 /* LaunchScreen.storyboard */; };
+		3CB7A5DD28785920000E80E8 /* MainCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7A5DC28785920000E80E8 /* MainCustomView.swift */; };
+		3CB7A5E02878610B000E80E8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7A5DF2878610B000E80E8 /* NetworkManager.swift */; };
+		3CB7A5E22879C321000E80E8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7A5E12879C321000E80E8 /* TableViewCell.swift */; };
+		3CB7A5E52879C3B9000E80E8 /* LabelPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7A5E42879C3B9000E80E8 /* LabelPadding.swift */; };
+		3CB7A5E7287A0E14000E80E8 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7A5E6287A0E14000E80E8 /* DescriptionViewController.swift */; };
+		3CB7A5E9287A0F6E000E80E8 /* DescriptionCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7A5E8287A0F6E000E80E8 /* DescriptionCustomView.swift */; };
+		3CB7A5EB287A1314000E80E8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB7A5EA287A1314000E80E8 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		3CB7A5CE287857C6000E80E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CB7A5D1287857C6000E80E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CB7A5D3287857C6000E80E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CB7A5DC28785920000E80E8 /* MainCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomView.swift; sourceTree = "<group>"; };
+		3CB7A5DF2878610B000E80E8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3CB7A5E12879C321000E80E8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3CB7A5E42879C3B9000E80E8 /* LabelPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelPadding.swift; sourceTree = "<group>"; };
+		3CB7A5E6287A0E14000E80E8 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		3CB7A5E8287A0F6E000E80E8 /* DescriptionCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCustomView.swift; sourceTree = "<group>"; };
+		3CB7A5EA287A1314000E80E8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +72,55 @@
 		3CB7A5C1287857C3000E80E8 /* TestChat */ = {
 			isa = PBXGroup;
 			children = (
-				3CB7A5C2287857C3000E80E8 /* AppDelegate.swift */,
-				3CB7A5C4287857C3000E80E8 /* SceneDelegate.swift */,
-				3CB7A5C6287857C3000E80E8 /* ViewController.swift */,
-				3CB7A5C8287857C3000E80E8 /* Main.storyboard */,
-				3CB7A5CE287857C6000E80E8 /* Assets.xcassets */,
 				3CB7A5D0287857C6000E80E8 /* LaunchScreen.storyboard */,
+				3CB7A5C8287857C3000E80E8 /* Main.storyboard */,
+				3CB7A5DA287857EF000E80E8 /* ViewControllers */,
+				3CB7A5DB287858F8000E80E8 /* Views */,
+				3CB7A5DE287860F4000E80E8 /* Managers */,
+				3CB7A5D9287857D4000E80E8 /* Application */,
+				3CB7A5CE287857C6000E80E8 /* Assets.xcassets */,
 				3CB7A5D3287857C6000E80E8 /* Info.plist */,
 				3CB7A5CB287857C3000E80E8 /* TestChat.xcdatamodeld */,
 			);
 			path = TestChat;
+			sourceTree = "<group>";
+		};
+		3CB7A5D9287857D4000E80E8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3CB7A5C2287857C3000E80E8 /* AppDelegate.swift */,
+				3CB7A5C4287857C3000E80E8 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3CB7A5DA287857EF000E80E8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CB7A5C6287857C3000E80E8 /* ViewController.swift */,
+				3CB7A5E12879C321000E80E8 /* TableViewCell.swift */,
+				3CB7A5E6287A0E14000E80E8 /* DescriptionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3CB7A5DB287858F8000E80E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CB7A5DC28785920000E80E8 /* MainCustomView.swift */,
+				3CB7A5E42879C3B9000E80E8 /* LabelPadding.swift */,
+				3CB7A5E8287A0F6E000E80E8 /* DescriptionCustomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CB7A5DE287860F4000E80E8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3CB7A5DF2878610B000E80E8 /* NetworkManager.swift */,
+				3CB7A5EA287A1314000E80E8 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB7A5E02878610B000E80E8 /* NetworkManager.swift in Sources */,
+				3CB7A5DD28785920000E80E8 /* MainCustomView.swift in Sources */,
+				3CB7A5E9287A0F6E000E80E8 /* DescriptionCustomView.swift in Sources */,
 				3CB7A5C7287857C3000E80E8 /* ViewController.swift in Sources */,
 				3CB7A5CD287857C3000E80E8 /* TestChat.xcdatamodeld in Sources */,
+				3CB7A5E52879C3B9000E80E8 /* LabelPadding.swift in Sources */,
 				3CB7A5C3287857C3000E80E8 /* AppDelegate.swift in Sources */,
+				3CB7A5E7287A0E14000E80E8 /* DescriptionViewController.swift in Sources */,
+				3CB7A5E22879C321000E80E8 /* TableViewCell.swift in Sources */,
 				3CB7A5C5287857C3000E80E8 /* SceneDelegate.swift in Sources */,
+				3CB7A5EB287A1314000E80E8 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
